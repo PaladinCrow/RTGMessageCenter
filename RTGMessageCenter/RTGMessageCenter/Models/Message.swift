@@ -11,4 +11,5 @@ class Message: Identifiable, Codable {
     var name: String
     var date: String
     var message: String
+    var receivedDate: Date?
 }

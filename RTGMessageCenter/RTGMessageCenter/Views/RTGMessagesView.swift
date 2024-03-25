@@ -26,18 +26,23 @@ struct RTGMessagesView: View {
                 HStack {
                     Text(message.message)
                         .font(Font.custom("Poppins-Regular", size: 14))
+                        .frame(alignment: .leading)
+                    Spacer()
                     Text(formatDate(message.date) ?? "")
                         .font(Font.custom("Poppins-Regular", size: 14))
+                        .frame(alignment: .trailing)
                 }
             }
             .listRowBackground(Color.white)
         }
         .scrollContentBackground(.hidden)
+        .frame(maxWidth: .infinity)
+        .offset(x: -15)
     }
     
     func formatDate(_ input: String) -> String? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-ddTHH:mm:ss.+zzzzZ"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
         guard let date = dateFormatter.date(from: input) else {return nil}
         let toStringFormatter = DateFormatter()
         toStringFormatter.dateStyle = .short

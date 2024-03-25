@@ -45,7 +45,7 @@ struct ContentView: View {
                         .padding([.leading, .trailing, .bottom])
                     Spacer()
                     NavigationLink(
-                        destination: RTGMessagesView(messages: vm.results)
+                        destination: RTGMessagesView(messages: vm.sortedResults)
                             .toolbarRole(.editor),
                         isActive: $isShowingMessagesView) {EmptyView()}
                     Button {
@@ -88,7 +88,7 @@ struct ContentView: View {
         Task {
             await vm.downloadMessages(searchText)
             isLoading = false
-            if vm.results.isEmpty {
+            if vm.sortedResults.isEmpty {
                 print("Present no messages alert")
                 alertTitle = "No Messages"
                 alertMessage = "No messages were found for this email."
