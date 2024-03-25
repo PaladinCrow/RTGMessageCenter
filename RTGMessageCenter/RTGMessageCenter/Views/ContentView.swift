@@ -22,6 +22,7 @@ struct ContentView: View {
             if isLoading {
                 ProgressView()
                     .progressViewStyle(.circular)
+                    .background(Color.clear)
             } else {
                 VStack {
                     Image(.rtgLogo)
@@ -56,6 +57,7 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.borderedProminent)
+                    .tint(Color(hex: 0x004fb5))
                     .cornerRadius(30.0)
                 }
                 .padding()

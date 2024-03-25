@@ -14,6 +14,8 @@ class MessageCenterViewModel: ObservableObject {
     @Published var error: Bool = false
     
     func downloadMessages(_ email: String) async {
+        results = []
+        sortedResults = []
         let urlString = "https://vcp79yttk9.execute-api.us-east-1.amazonaws.com/messages/users/" + email
         guard let downloadedResults: [Message] = await WebService().downloadData(fromURL: urlString) else {
             error = true
