@@ -29,13 +29,13 @@ class WebService: Codable {
             return decodedResponse
         } catch NetworkError.badStatus {
             // TODO: internally log the error code
-            print("Unknown status code")
+            print("Unknown status code for call from \(fromURL)")
         } catch NetworkError.decodeFail {
             // TODO: internally log the error code
-            print("Failed to decode data")
+            print("Failed to decode data for call from \(fromURL)")
         } catch {
             // TODO: internally log the error code
-            print("Unknown error")
+            print("Unknown error from call \(fromURL)")
         }
         return nil
     }
