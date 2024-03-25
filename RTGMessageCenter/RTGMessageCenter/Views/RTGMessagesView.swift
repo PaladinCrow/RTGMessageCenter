@@ -28,7 +28,7 @@ struct RTGMessagesView: View {
                         .font(Font.custom("Poppins-Regular", size: 14))
                         .frame(alignment: .leading)
                     Spacer()
-                    Text(formatDate(message.date) ?? "")
+                    Text(formatDate(message.receivedDate!) ?? "")
                         .font(Font.custom("Poppins-Regular", size: 14))
                         .frame(alignment: .trailing)
                 }
@@ -40,12 +40,9 @@ struct RTGMessagesView: View {
         .offset(x: -15)
     }
     
-    func formatDate(_ input: String) -> String? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.000Z"
-        guard let date = dateFormatter.date(from: input) else {return nil}
+    func formatDate(_ input: Date) -> String? {
         let toStringFormatter = DateFormatter()
         toStringFormatter.dateStyle = .short
-        return toStringFormatter.string(from: date)
+        return toStringFormatter.string(from: input)
     }
 }
