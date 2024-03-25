@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C40927A2BB19C2D0043AB19 /* RTGMessageCenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092792BB19C2D0043AB19 /* RTGMessageCenterApp.swift */; };
+		3C40927C2BB19C2D0043AB19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40927B2BB19C2D0043AB19 /* ContentView.swift */; };
+		3C40927E2BB19C2E0043AB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C40927D2BB19C2E0043AB19 /* Assets.xcassets */; };
+		3C4092822BB19C2E0043AB19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092812BB19C2E0043AB19 /* Preview Assets.xcassets */; };
+		3C40928C2BB19C2F0043AB19 /* RTGMessageCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40928B2BB19C2F0043AB19 /* RTGMessageCenterTests.swift */; };
+		3C4092962BB19C2F0043AB19 /* RTGMessageCenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092952BB19C2F0043AB19 /* RTGMessageCenterUITests.swift */; };
+		3C4092982BB19C2F0043AB19 /* RTGMessageCenterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092972BB19C2F0043AB19 /* RTGMessageCenterUITestsLaunchTests.swift */; };
+		3C4092A82BB19DA60043AB19 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092A72BB19DA60043AB19 /* Message.swift */; };
+		3C4092AA2BB19DB30043AB19 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092A92BB19DB30043AB19 /* Networking.swift */; };
+		3C4092AD2BB1A3FC0043AB19 /* MessageCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092AC2BB1A3FC0043AB19 /* MessageCenterViewModel.swift */; };
+		3C4092AF2BB1A9D70043AB19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092AE2BB1A9D70043AB19 /* Extensions.swift */; };
+		3C4092B12BB1B5FE0043AB19 /* RTGMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4092B02BB1B5FE0043AB19 /* RTGMessagesView.swift */; };
+		3C4092C72BB1C29C0043AB19 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B32BB1C29C0043AB19 /* OFL.txt */; };
+		3C4092C82BB1C29C0043AB19 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B42BB1C29C0043AB19 /* Poppins-Black.ttf */; };
+		3C4092C92BB1C29C0043AB19 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B52BB1C29C0043AB19 /* Poppins-BlackItalic.ttf */; };
+		3C4092CA2BB1C29C0043AB19 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B62BB1C29C0043AB19 /* Poppins-Bold.ttf */; };
+		3C4092CB2BB1C29C0043AB19 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B72BB1C29C0043AB19 /* Poppins-BoldItalic.ttf */; };
+		3C4092CC2BB1C29C0043AB19 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B82BB1C29C0043AB19 /* Poppins-ExtraBold.ttf */; };
+		3C4092CD2BB1C29C0043AB19 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092B92BB1C29C0043AB19 /* Poppins-ExtraBoldItalic.ttf */; };
+		3C4092CE2BB1C29C0043AB19 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092BA2BB1C29C0043AB19 /* Poppins-ExtraLight.ttf */; };
+		3C4092CF2BB1C29C0043AB19 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092BB2BB1C29C0043AB19 /* Poppins-ExtraLightItalic.ttf */; };
+		3C4092D02BB1C29C0043AB19 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092BC2BB1C29C0043AB19 /* Poppins-Italic.ttf */; };
+		3C4092D12BB1C29C0043AB19 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092BD2BB1C29C0043AB19 /* Poppins-Light.ttf */; };
+		3C4092D22BB1C29C0043AB19 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092BE2BB1C29C0043AB19 /* Poppins-LightItalic.ttf */; };
+		3C4092D32BB1C29C0043AB19 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092BF2BB1C29C0043AB19 /* Poppins-Medium.ttf */; };
+		3C4092D42BB1C29C0043AB19 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C02BB1C29C0043AB19 /* Poppins-MediumItalic.ttf */; };
+		3C4092D52BB1C29C0043AB19 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C12BB1C29C0043AB19 /* Poppins-Regular.ttf */; };
+		3C4092D62BB1C29C0043AB19 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C22BB1C29C0043AB19 /* Poppins-SemiBold.ttf */; };
+		3C4092D72BB1C29C0043AB19 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C32BB1C29C0043AB19 /* Poppins-SemiBoldItalic.ttf */; };
+		3C4092D82BB1C29C0043AB19 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C42BB1C29C0043AB19 /* Poppins-Thin.ttf */; };
+		3C4092D92BB1C29C0043AB19 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C52BB1C29C0043AB19 /* Poppins-ThinItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4092882BB19C2F0043AB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C40926E2BB19C2D0043AB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4092752BB19C2D0043AB19;
+			remoteInfo = RTGMessageCenter;
+		};
+		3C4092922BB19C2F0043AB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C40926E2BB19C2D0043AB19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4092752BB19C2D0043AB19;
+			remoteInfo = RTGMessageCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C4092762BB19C2D0043AB19 /* RTGMessageCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTGMessageCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4092792BB19C2D0043AB19 /* RTGMessageCenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTGMessageCenterApp.swift; sourceTree = "<group>"; };
+		3C40927B2BB19C2D0043AB19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C40927D2BB19C2E0043AB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C40927F2BB19C2E0043AB19 /* RTGMessageCenter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RTGMessageCenter.entitlements; sourceTree = "<group>"; };
+		3C4092812BB19C2E0043AB19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C4092872BB19C2F0043AB19 /* RTGMessageCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTGMessageCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C40928B2BB19C2F0043AB19 /* RTGMessageCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTGMessageCenterTests.swift; sourceTree = "<group>"; };
+		3C4092912BB19C2F0043AB19 /* RTGMessageCenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTGMessageCenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4092952BB19C2F0043AB19 /* RTGMessageCenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTGMessageCenterUITests.swift; sourceTree = "<group>"; };
+		3C4092972BB19C2F0043AB19 /* RTGMessageCenterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTGMessageCenterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C4092A72BB19DA60043AB19 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3C4092A92BB19DB30043AB19 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		3C4092AC2BB1A3FC0043AB19 /* MessageCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCenterViewModel.swift; sourceTree = "<group>"; };
+		3C4092AE2BB1A9D70043AB19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3C4092B02BB1B5FE0043AB19 /* RTGMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTGMessagesView.swift; sourceTree = "<group>"; };
+		3C4092B32BB1C29C0043AB19 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		3C4092B42BB1C29C0043AB19 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		3C4092B52BB1C29C0043AB19 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3C4092B62BB1C29C0043AB19 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		3C4092B72BB1C29C0043AB19 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3C4092B82BB1C29C0043AB19 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3C4092B92BB1C29C0043AB19 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3C4092BA2BB1C29C0043AB19 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3C4092BB2BB1C29C0043AB19 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3C4092BC2BB1C29C0043AB19 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		3C4092BD2BB1C29C0043AB19 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		3C4092BE2BB1C29C0043AB19 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		3C4092BF2BB1C29C0043AB19 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		3C4092C02BB1C29C0043AB19 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3C4092C12BB1C29C0043AB19 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		3C4092C22BB1C29C0043AB19 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		3C4092C32BB1C29C0043AB19 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3C4092C42BB1C29C0043AB19 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		3C4092C52BB1C29C0043AB19 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3C4092DA2BB1C5010043AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C4092732BB19C2D0043AB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4092842BB19C2F0043AB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C40928E2BB19C2F0043AB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C40926D2BB19C2D0043AB19 = {
+			isa = PBXGroup;
+			children = (
+				3C4092782BB19C2D0043AB19 /* RTGMessageCenter */,
+				3C40928A2BB19C2F0043AB19 /* RTGMessageCenterTests */,
+				3C4092942BB19C2F0043AB19 /* RTGMessageCenterUITests */,
+				3C4092772BB19C2D0043AB19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C4092772BB19C2D0043AB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092762BB19C2D0043AB19 /* RTGMessageCenter.app */,
+				3C4092872BB19C2F0043AB19 /* RTGMessageCenterTests.xctest */,
+				3C4092912BB19C2F0043AB19 /* RTGMessageCenterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C4092782BB19C2D0043AB19 /* RTGMessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092DA2BB1C5010043AB19 /* Info.plist */,
+				3C4092B22BB1C2800043AB19 /* Fonts */,
+				3C4092AB2BB1A1290043AB19 /* ViewModels */,
+				3C4092A62BB19C4C0043AB19 /* Models */,
+				3C4092A52BB19C450043AB19 /* Utilities */,
+				3C4092A42BB19C3F0043AB19 /* Views */,
+				3C4092792BB19C2D0043AB19 /* RTGMessageCenterApp.swift */,
+				3C40927D2BB19C2E0043AB19 /* Assets.xcassets */,
+				3C40927F2BB19C2E0043AB19 /* RTGMessageCenter.entitlements */,
+				3C4092802BB19C2E0043AB19 /* Preview Content */,
+			);
+			path = RTGMessageCenter;
+			sourceTree = "<group>";
+		};
+		3C4092802BB19C2E0043AB19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092812BB19C2E0043AB19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C40928A2BB19C2F0043AB19 /* RTGMessageCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C40928B2BB19C2F0043AB19 /* RTGMessageCenterTests.swift */,
+			);
+			path = RTGMessageCenterTests;
+			sourceTree = "<group>";
+		};
+		3C4092942BB19C2F0043AB19 /* RTGMessageCenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092952BB19C2F0043AB19 /* RTGMessageCenterUITests.swift */,
+				3C4092972BB19C2F0043AB19 /* RTGMessageCenterUITestsLaunchTests.swift */,
+			);
+			path = RTGMessageCenterUITests;
+			sourceTree = "<group>";
+		};
+		3C4092A42BB19C3F0043AB19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C40927B2BB19C2D0043AB19 /* ContentView.swift */,
+				3C4092B02BB1B5FE0043AB19 /* RTGMessagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C4092A52BB19C450043AB19 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092A92BB19DB30043AB19 /* Networking.swift */,
+				3C4092AE2BB1A9D70043AB19 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3C4092A62BB19C4C0043AB19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092A72BB19DA60043AB19 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C4092AB2BB1A1290043AB19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092AC2BB1A3FC0043AB19 /* MessageCenterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3C4092B22BB1C2800043AB19 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092C62BB1C29C0043AB19 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3C4092C62BB1C29C0043AB19 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				3C4092B32BB1C29C0043AB19 /* OFL.txt */,
+				3C4092B42BB1C29C0043AB19 /* Poppins-Black.ttf */,
+				3C4092B52BB1C29C0043AB19 /* Poppins-BlackItalic.ttf */,
+				3C4092B62BB1C29C0043AB19 /* Poppins-Bold.ttf */,
+				3C4092B72BB1C29C0043AB19 /* Poppins-BoldItalic.ttf */,
+				3C4092B82BB1C29C0043AB19 /* Poppins-ExtraBold.ttf */,
+				3C4092B92BB1C29C0043AB19 /* Poppins-ExtraBoldItalic.ttf */,
+				3C4092BA2BB1C29C0043AB19 /* Poppins-ExtraLight.ttf */,
+				3C4092BB2BB1C29C0043AB19 /* Poppins-ExtraLightItalic.ttf */,
+				3C4092BC2BB1C29C0043AB19 /* Poppins-Italic.ttf */,
+				3C4092BD2BB1C29C0043AB19 /* Poppins-Light.ttf */,
+				3C4092BE2BB1C29C0043AB19 /* Poppins-LightItalic.ttf */,
+				3C4092BF2BB1C29C0043AB19 /* Poppins-Medium.ttf */,
+				3C4092C02BB1C29C0043AB19 /* Poppins-MediumItalic.ttf */,
+				3C4092C12BB1C29C0043AB19 /* Poppins-Regular.ttf */,
+				3C4092C22BB1C29C0043AB19 /* Poppins-SemiBold.ttf */,
+				3C4092C32BB1C29C0043AB19 /* Poppins-SemiBoldItalic.ttf */,
+				3C4092C42BB1C29C0043AB19 /* Poppins-Thin.ttf */,
+				3C4092C52BB1C29C0043AB19 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C4092752BB19C2D0043AB19 /* RTGMessageCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C40929B2BB19C2F0043AB19 /* Build configuration list for PBXNativeTarget "RTGMessageCenter" */;
+			buildPhases = (
+				3C4092722BB19C2D0043AB19 /* Sources */,
+				3C4092732BB19C2D0043AB19 /* Frameworks */,
+				3C4092742BB19C2D0043AB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTGMessageCenter;
+			productName = RTGMessageCenter;
+			productReference = 3C4092762BB19C2D0043AB19 /* RTGMessageCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C4092862BB19C2F0043AB19 /* RTGMessageCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C40929E2BB19C2F0043AB19 /* Build configuration list for PBXNativeTarget "RTGMessageCenterTests" */;
+			buildPhases = (
+				3C4092832BB19C2F0043AB19 /* Sources */,
+				3C4092842BB19C2F0043AB19 /* Frameworks */,
+				3C4092852BB19C2F0043AB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4092892BB19C2F0043AB19 /* PBXTargetDependency */,
+			);
+			name = RTGMessageCenterTests;
+			productName = RTGMessageCenterTests;
+			productReference = 3C4092872BB19C2F0043AB19 /* RTGMessageCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C4092902BB19C2F0043AB19 /* RTGMessageCenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4092A12BB19C2F0043AB19 /* Build configuration list for PBXNativeTarget "RTGMessageCenterUITests" */;
+			buildPhases = (
+				3C40928D2BB19C2F0043AB19 /* Sources */,
+				3C40928E2BB19C2F0043AB19 /* Frameworks */,
+				3C40928F2BB19C2F0043AB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4092932BB19C2F0043AB19 /* PBXTargetDependency */,
+			);
+			name = RTGMessageCenterUITests;
+			productName = RTGMessageCenterUITests;
+			productReference = 3C4092912BB19C2F0043AB19 /* RTGMessageCenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C40926E2BB19C2D0043AB19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					3C4092752BB19C2D0043AB19 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					3C4092862BB19C2F0043AB19 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 3C4092752BB19C2D0043AB19;
+					};
+					3C4092902BB19C2F0043AB19 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 3C4092752BB19C2D0043AB19;
+					};
+				};
+			};
+			buildConfigurationList = 3C4092712BB19C2D0043AB19 /* Build configuration list for PBXProject "RTGMessageCenter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C40926D2BB19C2D0043AB19;
+			productRefGroup = 3C4092772BB19C2D0043AB19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C4092752BB19C2D0043AB19 /* RTGMessageCenter */,
+				3C4092862BB19C2F0043AB19 /* RTGMessageCenterTests */,
+				3C4092902BB19C2F0043AB19 /* RTGMessageCenterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C4092742BB19C2D0043AB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4092CE2BB1C29C0043AB19 /* Poppins-ExtraLight.ttf in Resources */,
+				3C4092D72BB1C29C0043AB19 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				3C4092D42BB1C29C0043AB19 /* Poppins-MediumItalic.ttf in Resources */,
+				3C4092D12BB1C29C0043AB19 /* Poppins-Light.ttf in Resources */,
+				3C4092C82BB1C29C0043AB19 /* Poppins-Black.ttf in Resources */,
+				3C4092CA2BB1C29C0043AB19 /* Poppins-Bold.ttf in Resources */,
+				3C4092D52BB1C29C0043AB19 /* Poppins-Regular.ttf in Resources */,
+				3C4092CB2BB1C29C0043AB19 /* Poppins-BoldItalic.ttf in Resources */,
+				3C4092CD2BB1C29C0043AB19 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				3C4092D82BB1C29C0043AB19 /* Poppins-Thin.ttf in Resources */,
+				3C4092C72BB1C29C0043AB19 /* OFL.txt in Resources */,
+				3C4092D02BB1C29C0043AB19 /* Poppins-Italic.ttf in Resources */,
+				3C4092D92BB1C29C0043AB19 /* Poppins-ThinItalic.ttf in Resources */,
+				3C4092CF2BB1C29C0043AB19 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				3C4092D32BB1C29C0043AB19 /* Poppins-Medium.ttf in Resources */,
+				3C4092D22BB1C29C0043AB19 /* Poppins-LightItalic.ttf in Resources */,
+				3C4092CC2BB1C29C0043AB19 /* Poppins-ExtraBold.ttf in Resources */,
+				3C4092C92BB1C29C0043AB19 /* Poppins-BlackItalic.ttf in Resources */,
+				3C4092D62BB1C29C0043AB19 /* Poppins-SemiBold.ttf in Resources */,
+				3C4092822BB19C2E0043AB19 /* Preview Assets.xcassets in Resources */,
+				3C40927E2BB19C2E0043AB19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4092852BB19C2F0043AB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C40928F2BB19C2F0043AB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C4092722BB19C2D0043AB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4092AD2BB1A3FC0043AB19 /* MessageCenterViewModel.swift in Sources */,
+				3C4092AF2BB1A9D70043AB19 /* Extensions.swift in Sources */,
+				3C4092A82BB19DA60043AB19 /* Message.swift in Sources */,
+				3C4092B12BB1B5FE0043AB19 /* RTGMessagesView.swift in Sources */,
+				3C40927C2BB19C2D0043AB19 /* ContentView.swift in Sources */,
+				3C40927A2BB19C2D0043AB19 /* RTGMessageCenterApp.swift in Sources */,
+				3C4092AA2BB19DB30043AB19 /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4092832BB19C2F0043AB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C40928C2BB19C2F0043AB19 /* RTGMessageCenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C40928D2BB19C2F0043AB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4092962BB19C2F0043AB19 /* RTGMessageCenterUITests.swift in Sources */,
+				3C4092982BB19C2F0043AB19 /* RTGMessageCenterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4092892BB19C2F0043AB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4092752BB19C2D0043AB19 /* RTGMessageCenter */;
+			targetProxy = 3C4092882BB19C2F0043AB19 /* PBXContainerItemProxy */;
+		};
+		3C4092932BB19C2F0043AB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4092752BB19C2D0043AB19 /* RTGMessageCenter */;
+			targetProxy = 3C4092922BB19C2F0043AB19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C4092992BB19C2F0043AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C40929A2BB19C2F0043AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3C40929C2BB19C2F0043AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RTGMessageCenter/RTGMessageCenter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RTGMessageCenter/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RTGMessageCenter/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theyallrunners.RTGMessageCenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C40929D2BB19C2F0043AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RTGMessageCenter/RTGMessageCenter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RTGMessageCenter/Preview Content\"";
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RTGMessageCenter/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theyallrunners.RTGMessageCenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C40929F2BB19C2F0043AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theyallrunners.RTGMessageCenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTGMessageCenter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RTGMessageCenter";
+			};
+			name = Debug;
+		};
+		3C4092A02BB19C2F0043AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theyallrunners.RTGMessageCenterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTGMessageCenter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RTGMessageCenter";
+			};
+			name = Release;
+		};
+		3C4092A22BB19C2F0043AB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theyallrunners.RTGMessageCenterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RTGMessageCenter;
+			};
+			name = Debug;
+		};
+		3C4092A32BB19C2F0043AB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theyallrunners.RTGMessageCenterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RTGMessageCenter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4092712BB19C2D0043AB19 /* Build configuration list for PBXProject "RTGMessageCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4092992BB19C2F0043AB19 /* Debug */,
+				3C40929A2BB19C2F0043AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C40929B2BB19C2F0043AB19 /* Build configuration list for PBXNativeTarget "RTGMessageCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C40929C2BB19C2F0043AB19 /* Debug */,
+				3C40929D2BB19C2F0043AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C40929E2BB19C2F0043AB19 /* Build configuration list for PBXNativeTarget "RTGMessageCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C40929F2BB19C2F0043AB19 /* Debug */,
+				3C4092A02BB19C2F0043AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4092A12BB19C2F0043AB19 /* Build configuration list for PBXNativeTarget "RTGMessageCenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4092A22BB19C2F0043AB19 /* Debug */,
+				3C4092A32BB19C2F0043AB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C40926E2BB19C2D0043AB19 /* Project object */;
+}
