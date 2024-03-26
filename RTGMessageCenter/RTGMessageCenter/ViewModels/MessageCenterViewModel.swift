@@ -11,19 +11,20 @@ import Foundation
 class MessageCenterViewModel: ObservableObject {
     private var results: [Message] = []
     @Published var sortedResults: [Message] = []
-    @Published var error: Bool = false
+    @Published var error: Error?
     
     func downloadMessages(_ email: String) async {
         results = []
         sortedResults = []
         let urlString = "https://vcp79yttk9.execute-api.us-east-1.amazonaws.com/messages/users/" + email
-        guard let downloadedResults: [Message] = await WebService().downloadData(fromURL: urlString) else {
-            error = true
+        let downloadedResults: (Error?, [Message]?) = await WebService().downloadData(fromURL: urlString)
+        guard let result = downloadedResults.1 else {
+            error = downloadedResults.0
             return
         }
-        results = downloadedResults
+        results = result
         sortMessagesByDate()
-        error = false
+        error = nil
     }
     
     private func sortMessagesByDate() {

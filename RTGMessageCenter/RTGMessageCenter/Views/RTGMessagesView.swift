@@ -14,7 +14,7 @@ struct RTGMessagesView: View {
     var body: some View {
         Divider()
         VStack {
-            Text("Message Center")
+            Text("MCTitle")
                 .font(Font.custom("Poppins-Bold", size: 16))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()

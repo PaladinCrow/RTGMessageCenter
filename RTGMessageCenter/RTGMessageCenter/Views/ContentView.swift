@@ -23,20 +23,21 @@ struct ContentView: View {
                 ProgressView()
                     .progressViewStyle(.circular)
                     .background(Color.clear)
+                    .animation(.easeIn(duration: 3), value: isLoading)
             } else {
                 VStack {
                     Image(.rtgLogo)
                         .padding()
-                    Text("Message Center")
+                    Text("MCTitle")
                         .font(Font.custom("Poppins-Regular", size: 24))
                         .padding()
                         .multilineTextAlignment(.center)
-                    Text("Enter your email to search for your messages")
+                    Text("MCLookupText")
                         .frame(width: 300)
                         .font(Font.custom("Poppins-Regular", size: 16))
                         .padding()
                         .multilineTextAlignment(.center)
-                    TextField("Enter your email", text: $searchText)
+                    TextField("MCTextFieldPlaceholder", text: $searchText)
                         .font(Font.custom("Poppins-Regular", size: 16))
                         .textContentType(.emailAddress)
                         .disableAutocorrection(true)
@@ -52,7 +53,7 @@ struct ContentView: View {
                     Button {
                         lookUpMessages()
                     } label: {
-                        Text("Search")
+                        Text("MCSearchButtonText")
                             .font(Font.custom("Poppins-Regular", size: 16))
                             .frame(maxWidth: .infinity)
                     }
@@ -78,11 +79,10 @@ struct ContentView: View {
     func lookUpMessages() {
         isLoading = true
         guard searchText.isValidEmail else {
-            print("No valid email to lookup")
             isLoading = false
             searchText = ""
-            alertTitle = "Invalid Email"
-            alertMessage = "You have input an invalid email address. Please try again."
+            alertTitle = String(localized: "InvalidEmailAlertTitle")
+            alertMessage = String(localized: "InvalidEmailAlertText")
             showAlert = true
             return
         }
@@ -90,17 +90,40 @@ struct ContentView: View {
         Task {
             await vm.downloadMessages(searchText)
             isLoading = false
+            if let error = vm.error as? NetworkError {
+                switch error {
+                case .badStatus:
+                    alertTitle = String(localized: "BadStatusCodeAlertTitle")
+                    alertMessage = String(localized: "BadStatusCodeAlertText")
+                    showAlert = true
+                    return
+                case .notFound:
+                    alertTitle = String(localized: "EmailNotFoundAlertTitle")
+                    alertMessage = String(localized: "EmailNotFoundAlertText")
+                    showAlert = true
+                    return
+                case .serverIssues:
+                    alertTitle = String(localized: "ServerIssuesAlertTitle")
+                    alertMessage = String(localized: "ServerIssuesAlertText")
+                    showAlert = true
+                    return
+                case .decodeFail:
+                    alertTitle = String(localized: "MessageErrorAlertTitle")
+                    alertMessage = String(localized: "MessageErrorAlertText")
+                    showAlert = true
+                    return
+                case .unknown:
+                    alertTitle = String(localized: "UnknownErrorAlertTitle")
+                    alertMessage = String(localized: "UnknownErrorAlertText")
+                    showAlert = true
+                    return
+                }
+            }
             if vm.sortedResults.isEmpty {
-                print("Present no messages alert")
-                alertTitle = "No Messages"
-                alertMessage = "No messages were found for this email."
+                alertTitle = String(localized: "NoMessagesAlertTitle")
+                alertMessage = String(localized: "NoMessagesAlertText")
                 showAlert = true
                 return
-            }
-            if vm.error {
-                print("Present error alert")
-                alertTitle = "Unknown Error"
-                alertMessage = "We seem to having some problems. Please try again or try a different email."
             }
             isShowingMessagesView = true
         }
