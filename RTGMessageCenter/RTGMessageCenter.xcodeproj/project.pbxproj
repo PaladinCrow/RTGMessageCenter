@@ -39,6 +39,7 @@
 		3C4092D82BB1C29C0043AB19 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C42BB1C29C0043AB19 /* Poppins-Thin.ttf */; };
 		3C4092D92BB1C29C0043AB19 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4092C52BB1C29C0043AB19 /* Poppins-ThinItalic.ttf */; };
 		3C4228282BB317EC00CF540E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3C4228272BB317EC00CF540E /* Localizable.xcstrings */; };
+		3C42282C2BB3432C00CF540E /* RTGSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C42282B2BB3432C00CF540E /* RTGSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		3C4092C52BB1C29C0043AB19 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		3C4092DA2BB1C5010043AB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C4228272BB317EC00CF540E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		3C42282B2BB3432C00CF540E /* RTGSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTGSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			children = (
 				3C40927B2BB19C2D0043AB19 /* ContentView.swift */,
 				3C4092B02BB1B5FE0043AB19 /* RTGMessagesView.swift */,
+				3C42282B2BB3432C00CF540E /* RTGSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				3C4092AF2BB1A9D70043AB19 /* Extensions.swift in Sources */,
 				3C4092A82BB19DA60043AB19 /* Message.swift in Sources */,
 				3C4092B12BB1B5FE0043AB19 /* RTGMessagesView.swift in Sources */,
+				3C42282C2BB3432C00CF540E /* RTGSearchView.swift in Sources */,
 				3C40927C2BB19C2D0043AB19 /* ContentView.swift in Sources */,
 				3C40927A2BB19C2D0043AB19 /* RTGMessageCenterApp.swift in Sources */,
 				3C4092AA2BB19DB30043AB19 /* Networking.swift in Sources */,
