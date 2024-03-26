@@ -43,6 +43,7 @@ struct RTGMessagesView: View {
     func formatDate(_ input: Date) -> String? {
         let toStringFormatter = DateFormatter()
         toStringFormatter.dateStyle = .short
+        toStringFormatter.locale = .current
         return toStringFormatter.string(from: input)
     }
 }
